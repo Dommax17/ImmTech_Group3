@@ -69,22 +69,22 @@ MonoBehaviour:
     defaultState: 1
   tonemapper:
     overrideState: 1
-    value: 1
+    value: 2
   toneCurveToeStrength:
     overrideState: 1
-    value: 0
+    value: 0.204
   toneCurveToeLength:
     overrideState: 1
-    value: 0.5
+    value: 1
   toneCurveShoulderStrength:
     overrideState: 1
-    value: 0
+    value: 1
   toneCurveShoulderLength:
     overrideState: 1
-    value: 0.5
+    value: 2.25
   toneCurveShoulderAngle:
     overrideState: 1
-    value: 0
+    value: 1
   toneCurveGamma:
     overrideState: 1
     value: 1
@@ -118,7 +118,7 @@ MonoBehaviour:
     value: 0
   contrast:
     overrideState: 1
-    value: 1
+    value: -5
   mixerRedOutRedIn:
     overrideState: 1
     value: 100

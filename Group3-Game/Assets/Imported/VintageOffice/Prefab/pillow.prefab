@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4433924106134534}
   - component: {fileID: 33633966821491094}
   - component: {fileID: 23690456729057354}
+  - component: {fileID: 6420845277203143633}
   m_Layer: 0
   m_Name: pillow
   m_TagString: Untagged
@@ -81,3 +82,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &6420845277203143633
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1130542296206310}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300052, guid: 876a589489092d847bcc36ac3a0239d0, type: 3}

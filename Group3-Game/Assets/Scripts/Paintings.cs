@@ -11,10 +11,11 @@ public class Paintings : MonoBehaviour
 
     void Start()
     {
-        socket = GetComponent<XRSocketInteractor>();
+        socket = gameObject.GetComponent<XRSocketInteractor>();
+        socket.onSelectEntered.AddListener(UpdateInventory);
     }
 
-    public void Update()
+    public void UpdateInventory(XRBaseInteractable obj)
     {
 
         IXRSelectInteractable objName = socket.GetOldestInteractableSelected();

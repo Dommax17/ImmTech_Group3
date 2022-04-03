@@ -51,7 +51,7 @@ public class PaintingManager : MonoBehaviour
             //show piece of code under clock
             code.SetActive(true);
             //play audio queue for completion
-            code.GetComponent<AudioSource>().Play();
+            //code.GetComponent<AudioSource>().Play();
             //disable grab on paintings
             painting1.GetComponent<XRGrabInteractable>().enabled = false;
             painting2.GetComponent<XRGrabInteractable>().enabled = false;

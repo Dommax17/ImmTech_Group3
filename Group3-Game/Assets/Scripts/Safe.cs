@@ -16,7 +16,8 @@ public class Safe : MonoBehaviour
 
     [Header("Opening Safe")]
     [SerializeField] Animator anim;
-    [SerializeField] AudioSource source;
+    [SerializeField] AudioSource openSound;
+    [SerializeField] AudioSource buttonSound;
     [SerializeField] GameObject book;
 
 
@@ -31,6 +32,7 @@ public class Safe : MonoBehaviour
 
     public void EnterCode(int input)
     {
+        buttonSound.Play();
         inputs[current] = input;
         if(current < 2)
         {
@@ -54,7 +56,8 @@ public class Safe : MonoBehaviour
             }
             //spawn book then open safe & play sound
             book.GetComponent<XRGrabInteractable>().enabled = true;
-            //source.Play();
+            book.GetComponent<BookFloat>().enabled = false;
+            openSound.Play();
             anim.SetBool("isOpen", true);
 
         }

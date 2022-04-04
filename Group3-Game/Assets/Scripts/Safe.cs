@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.XR.Interaction.Toolkit;
 
 public class Safe : MonoBehaviour
 {
@@ -16,6 +17,7 @@ public class Safe : MonoBehaviour
     [Header("Opening Safe")]
     [SerializeField] Animator anim;
     [SerializeField] AudioSource source;
+    [SerializeField] GameObject book;
 
 
     public void Start()
@@ -24,6 +26,7 @@ public class Safe : MonoBehaviour
         passcode[0] = 3;
         passcode[1] = 7;
         passcode[2] = 2;
+        book.GetComponent<XRGrabInteractable>().enabled = false;
     }
 
     public void EnterCode(int input)
@@ -49,7 +52,8 @@ public class Safe : MonoBehaviour
             {
                 buttons[i].enabled = false;
             }
-            //open safe & play sound
+            //spawn book then open safe & play sound
+            book.GetComponent<XRGrabInteractable>().enabled = true;
             //source.Play();
             anim.SetBool("isOpen", true);
 

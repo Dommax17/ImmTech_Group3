@@ -13945,7 +13945,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 2752297173730859690, guid: 9135f32b0530e4a4ca04c66198c3cce7,
     type: 2}
-  m_audioClip: {fileID: 8300000, guid: 49c4952a8c3d8b446a5988dca4ef6753, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 5c84ac9b46c425c4380eeab8bf06525a, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.2
   m_Pitch: 1
@@ -14190,8 +14190,8 @@ MonoBehaviour:
   isOn: 1
   updateButton: 0
   source: {fileID: 0}
-  normalClip: {fileID: 8300000, guid: 49c4952a8c3d8b446a5988dca4ef6753, type: 3}
-  reverseClip: {fileID: 8300000, guid: 125101e6e7826f84abe91d5c8cde617c, type: 3}
+  normalClip: {fileID: 8300000, guid: 5c84ac9b46c425c4380eeab8bf06525a, type: 3}
+  reverseClip: {fileID: 8300000, guid: 0a5e143c97b208a41bb5c4efd7c82ffa, type: 3}
   reverse: 0
   updateMusic: 0
 --- !u!65 &1513436170

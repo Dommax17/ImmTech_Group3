@@ -1163,10 +1163,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 1f96366314f3caf4999f5a769b80ee07,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 1f96366314f3caf4999f5a769b80ee07,
+        type: 3}
+      propertyPath: m_ReceiveShadows
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 1f96366314f3caf4999f5a769b80ee07,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 80985cff8adc5da47b37d8c02daf4b17, type: 2}
     - target: {fileID: 919132149155446097, guid: 1f96366314f3caf4999f5a769b80ee07,
         type: 3}
       propertyPath: m_Name
       value: Cthulhu
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1f96366314f3caf4999f5a769b80ee07,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1f96366314f3caf4999f5a769b80ee07, type: 3}
@@ -3947,7 +3967,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 7ecd533c8f2f16e429544f5d62be6825,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 7ecd533c8f2f16e429544f5d62be6825,
         type: 3}
@@ -8984,7 +9004,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1267595468571240, guid: 592a57abb5eb40f49ae12dcc0411ae66, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4399325466231440, guid: 592a57abb5eb40f49ae12dcc0411ae66, type: 3}
       propertyPath: m_RootOrder
@@ -11374,7 +11394,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!23 &1315766396
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -12858,6 +12878,151 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1424127192}
   m_CullTransparentMesh: 1
+--- !u!1 &1436540257
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1436540260}
+  - component: {fileID: 1436540259}
+  - component: {fileID: 1436540258}
+  m_Layer: 0
+  m_Name: Cthulhu Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!82 &1436540258
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1436540257}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 5902f2f4f15c137489df7c987234db65, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!114 &1436540259
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1436540257}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c05a1cf63d841bd4f9e863fd5b218cbd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lightBlocker: {fileID: 1315766395}
+  sun: {fileID: 2092537820}
+  lightningSFX: {fileID: 1436540258}
+  radio: {fileID: 1513436166}
+  trigger: 0
+--- !u!4 &1436540260
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1436540257}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -2.3096, y: 2.548034, z: -2.738718}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 21
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1438268381
 GameObject:
   m_ObjectHideFlags: 0
@@ -13780,7 +13945,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 2752297173730859690, guid: 9135f32b0530e4a4ca04c66198c3cce7,
     type: 2}
-  m_audioClip: {fileID: 8300000, guid: 6752dacea56e6b340b99db1ac45aabf7, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 49c4952a8c3d8b446a5988dca4ef6753, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.2
   m_Pitch: 1
@@ -13826,7 +13991,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 1
+      value: 0.5
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -14021,10 +14186,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 554c395899765cb4eb8c3a7691455722, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isOn: 1
-  source: {fileID: 0}
   switchSource: {fileID: 1913821176}
-  update: 0
+  isOn: 1
+  updateButton: 0
+  source: {fileID: 0}
+  normalClip: {fileID: 8300000, guid: 49c4952a8c3d8b446a5988dca4ef6753, type: 3}
+  reverseClip: {fileID: 8300000, guid: 125101e6e7826f84abe91d5c8cde617c, type: 3}
+  reverse: 0
+  updateMusic: 0
 --- !u!65 &1513436170
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -17935,7 +18104,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1267595468571240, guid: 592a57abb5eb40f49ae12dcc0411ae66, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4399325466231440, guid: 592a57abb5eb40f49ae12dcc0411ae66, type: 3}
       propertyPath: m_RootOrder
@@ -18349,7 +18518,7 @@ Light:
   serializedVersion: 10
   m_Type: 1
   m_Shape: 0
-  m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
+  m_Color: {r: 0, g: 0.17052367, b: 0.39607844, a: 1}
   m_Intensity: 3.36
   m_Range: 10
   m_SpotAngle: 30

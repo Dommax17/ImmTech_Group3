@@ -25,6 +25,10 @@ public class PaintingManager : MonoBehaviour
 
     [SerializeField] bool done = false;
 
+    [Header("Monologue")]
+    [SerializeField] AudioClip clip;
+    [SerializeField] AudioSource monologue;
+
     public void Start()
     {
         code.SetActive(false);
@@ -62,6 +66,8 @@ public class PaintingManager : MonoBehaviour
                 code.SetActive(true);
                 //play audio queue for completion
                 code.GetComponent<AudioSource>().Play();
+                monologue.clip = clip;
+                monologue.Play();
                 //disable grab on paintings
                 vSocket1.SetActive(false);
                 painting1.SetActive(false);

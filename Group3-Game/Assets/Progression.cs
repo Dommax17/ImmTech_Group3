@@ -23,6 +23,11 @@ public class Progression : MonoBehaviour
     [SerializeField] bool choice1;
     [SerializeField] bool choice2;
 
+    [Header("Monologue")]
+    [SerializeField] AudioSource monologue;
+    [SerializeField] AudioClip doorClip;
+    [SerializeField] AudioClip choiceClip;
+
     public void Start()
     {
         ringing.Play();
@@ -64,6 +69,9 @@ public class Progression : MonoBehaviour
         {
             ringing.Stop();
             doorKnocking.Play();
+            StartCoroutine(waitTime(1f));
+            monologue.clip = doorClip;
+            monologue.Play();
             currentState = 1;
         }
     }
@@ -89,6 +97,8 @@ public class Progression : MonoBehaviour
         if(currentState == 2)
         { 
             choiceVisual.SetActive(true);
+            monologue.clip = choiceClip;
+            monologue.Play();
             currentState = 3;
         }
     }

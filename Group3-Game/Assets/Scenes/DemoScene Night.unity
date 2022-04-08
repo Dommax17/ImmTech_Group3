@@ -983,6 +983,8 @@ MonoBehaviour:
   vSocket3: {fileID: 528524278}
   vSocket4: {fileID: 1047748974}
   done: 0
+  clip: {fileID: 8300000, guid: a8da90171d54bf948ab1405d3baa6f09, type: 3}
+  monologue: {fileID: 289771052}
 --- !u!1 &178874447
 GameObject:
   m_ObjectHideFlags: 0
@@ -2705,7 +2707,7 @@ GameObject:
   - component: {fileID: 289771051}
   - component: {fileID: 289771052}
   m_Layer: 0
-  m_Name: GoalCompletedSound
+  m_Name: Monologue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2736,8 +2738,8 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 8143076995811136999, guid: 9135f32b0530e4a4ca04c66198c3cce7,
     type: 2}
-  m_audioClip: {fileID: 8300000, guid: 5a0dc997f408c2140942a3be2dda9195, type: 3}
-  m_PlayOnAwake: 0
+  m_audioClip: {fileID: 8300000, guid: a93f9063f9b2151428203394bbc8a640, type: 3}
+  m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -14648,6 +14650,9 @@ MonoBehaviour:
   choiceObject: {fileID: 1436540261}
   choice1: 0
   choice2: 0
+  monologue: {fileID: 289771052}
+  doorClip: {fileID: 8300000, guid: 6f624f226722a664687cc117429e5ab0, type: 3}
+  choiceClip: {fileID: 8300000, guid: 9cb6cb462cf68ab46a0b8e49ace59cf9, type: 3}
 --- !u!4 &1827025916
 Transform:
   m_ObjectHideFlags: 0

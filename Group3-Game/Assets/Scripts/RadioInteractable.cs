@@ -42,10 +42,15 @@ public class RadioInteractable : MonoBehaviour
             switchSource.Play();
             source.volume = 0;
         }
-        else if (!isOn)
+        else if (!isOn && !reverse)
         {
             switchSource.Play();
             source.volume = 0.4f;
+        }
+        else if(!isOn && reverse)
+        {
+            switchSource.Play();
+            source.volume = 0.8f;
         }
         isOn = !isOn;
         updateButton = false;
@@ -58,7 +63,7 @@ public class RadioInteractable : MonoBehaviour
             source.volume = 0;
             source.clip = reverseClip;
             source.Play();
-            source.volume = 0.4f;
+            source.volume = 0.8f;
         }
         else if(reverse)
         {

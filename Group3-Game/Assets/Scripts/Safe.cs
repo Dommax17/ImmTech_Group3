@@ -20,6 +20,8 @@ public class Safe : MonoBehaviour
     [SerializeField] AudioSource buttonSound;
     [SerializeField] GameObject book;
     [SerializeField] Progression progress;
+    [SerializeField] GameObject lightEmit;
+    public bool floaty = true;
     public bool isOpen;
 
 
@@ -54,8 +56,8 @@ public class Safe : MonoBehaviour
             //disable buttons
             DisableButtons();
             //spawn book then open safe & play sound
+            lightEmit.SetActive(false);
             book.GetComponent<XRGrabInteractable>().enabled = true;
-            book.GetComponent<BookFloat>().enabled = false;
             openSound.Play();
             anim.SetBool("isOpen", true);
             isOpen = true;
@@ -64,6 +66,14 @@ public class Safe : MonoBehaviour
         else
         {
             current = 0;
+        }
+    }
+
+    public void DisableFloat()
+    {
+        if (floaty)
+        {
+            book.GetComponent<BookFloat>().enabled = false;
         }
     }
 

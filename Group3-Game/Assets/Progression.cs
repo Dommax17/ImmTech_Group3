@@ -13,6 +13,7 @@ public class Progression : MonoBehaviour
     [Header("Door")]
     [SerializeField] AudioSource doorKnocking;
     [SerializeField] AudioSource doorDialogue;
+    [SerializeField] GameObject light;
     [Header("Safe")]
     [SerializeField] Safe safeObject;
     [SerializeField] bool safeOpen;
@@ -73,6 +74,8 @@ public class Progression : MonoBehaviour
         if (currentState == 1)
         {
             doorKnocking.Stop();
+            light.SetActive(false);
+            StartCoroutine(waitTime(2f));
             doorDialogue.Play();
             safeObject.EnableButtons();
             currentState = 2;
@@ -83,7 +86,7 @@ public class Progression : MonoBehaviour
     //Need to add dialogue here.
     public void SafeProgress()
     {
-        if(safeOpen && currentState == 2)
+        if(currentState == 2)
         { 
             choiceVisual.SetActive(true);
             currentState = 3;
@@ -104,6 +107,7 @@ public class Progression : MonoBehaviour
             currentState = 4;
         }
     }
+
     public void MakeChoice(int choice)
     {
         if (choice == 1)
@@ -114,5 +118,10 @@ public class Progression : MonoBehaviour
         {
             choice2 = true;
         }
+    }
+
+    IEnumerator waitTime(float timer)
+    {
+        yield return new WaitForSeconds(timer);
     }
 }

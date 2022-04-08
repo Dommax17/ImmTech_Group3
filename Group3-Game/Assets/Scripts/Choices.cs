@@ -61,7 +61,7 @@ public class Choices : MonoBehaviour
 
     public void Ending()
     {
-        StartCoroutine(GoToSceneRoutine(0));
+        StartCoroutine(GoToSceneRoutine(2));
     }
 
     IEnumerator GoToSceneRoutine(int sceneIndex)

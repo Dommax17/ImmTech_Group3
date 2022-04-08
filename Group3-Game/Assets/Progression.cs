@@ -27,6 +27,9 @@ public class Progression : MonoBehaviour
     [SerializeField] AudioSource monologue;
     [SerializeField] AudioClip doorClip;
     [SerializeField] AudioClip choiceClip;
+    [SerializeField] AudioClip cthulhuClip;
+    [SerializeField] AudioClip paperClip;
+    [SerializeField] bool paperClip2;
 
     public void Start()
     {
@@ -108,11 +111,15 @@ public class Progression : MonoBehaviour
     {
         if (choice1 && currentState == 3)
         {
+            monologue.clip = cthulhuClip;
+            monologue.Play();
             choiceObject.choice1 = true;
             currentState = 4;
         }
         else if(choice2 && currentState == 3)
         {
+            monologue.clip = cthulhuClip;
+            monologue.Play();
             choiceObject.choice2 = true;
             currentState = 4;
         }
@@ -133,5 +140,14 @@ public class Progression : MonoBehaviour
     IEnumerator waitTime(float timer)
     {
         yield return new WaitForSeconds(timer);
+    }
+
+    public void Paper()
+    {
+        if(!paperClip2)
+        {
+            monologue.clip = paperClip;
+            monologue.Play();
+        }
     }
 }

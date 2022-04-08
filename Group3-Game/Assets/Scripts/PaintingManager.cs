@@ -16,6 +16,12 @@ public class PaintingManager : MonoBehaviour
     [SerializeField] GameObject socket1;
     [SerializeField] GameObject socket2;
     [SerializeField] GameObject socket4;
+    [Header("ToDisable")]
+    [SerializeField] GameObject painting3;
+    [SerializeField] GameObject vSocket1;
+    [SerializeField] GameObject vSocket2;
+    [SerializeField] GameObject vSocket3;
+    [SerializeField] GameObject vSocket4;
 
     public void Start()
     {
@@ -53,11 +59,13 @@ public class PaintingManager : MonoBehaviour
             //play audio queue for completion
             code.GetComponent<AudioSource>().Play();
             //disable grab on paintings
-            socket1.SetActive(false);
+            vSocket1.SetActive(false);
             painting1.SetActive(false);
-            socket2.SetActive(false);
+            vSocket2.SetActive(false);
             painting2.SetActive(false);
-            socket4.SetActive(false);
+            vSocket3.SetActive(false);
+            painting3.SetActive(false);
+            vSocket4.SetActive(false);
             painting4.SetActive(false);
         }
     }

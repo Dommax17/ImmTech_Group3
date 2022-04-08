@@ -19,6 +19,8 @@ public class Safe : MonoBehaviour
     [SerializeField] AudioSource openSound;
     [SerializeField] AudioSource buttonSound;
     [SerializeField] GameObject book;
+    [SerializeField] Progression progress;
+    public bool isOpen;
 
 
     public void Start()
@@ -50,20 +52,34 @@ public class Safe : MonoBehaviour
         if(inputs[0] == passcode[0] && inputs[1] == passcode[1] && inputs[2] == passcode[2])
         {
             //disable buttons
-            for(int i = 0; i < buttons.Length; i++)
-            {
-                buttons[i].enabled = false;
-            }
+            DisableButtons();
             //spawn book then open safe & play sound
             book.GetComponent<XRGrabInteractable>().enabled = true;
             book.GetComponent<BookFloat>().enabled = false;
             openSound.Play();
             anim.SetBool("isOpen", true);
-
+            isOpen = true;
+            progress.SafeProgress();
         }
         else
         {
             current = 0;
+        }
+    }
+
+    public void DisableButtons()
+    {
+        for (int i = 0; i < buttons.Length; i++)
+        {
+            buttons[i].enabled = false;
+        }
+    }
+
+    public void EnableButtons()
+    {
+        for (int i = 0; i < buttons.Length; i++)
+        {
+            buttons[i].enabled = true;
         }
     }
 }

@@ -12,7 +12,7 @@ public class Choices : MonoBehaviour
     [SerializeField] GameObject redLight;
     [SerializeField] BookFloat redFlying;
     [SerializeField] Rigidbody redRigidbody;
-    [SerializeField] bool choice1 = false;
+    public bool choice1 = false;
 
     [Header("Green")]
     [SerializeField] GameObject greenBook;
@@ -20,7 +20,7 @@ public class Choices : MonoBehaviour
     [SerializeField] GameObject greenLight;
     [SerializeField] BookFloat greenFlying;
     [SerializeField] Rigidbody greenRigidbody;
-    [SerializeField] bool choice2 = false;
+    public bool choice2 = false;
 
     [Header("Ending")]
     [SerializeField] FadeScreen fader;

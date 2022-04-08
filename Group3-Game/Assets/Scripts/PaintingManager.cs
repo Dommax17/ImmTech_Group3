@@ -23,6 +23,8 @@ public class PaintingManager : MonoBehaviour
     [SerializeField] GameObject vSocket3;
     [SerializeField] GameObject vSocket4;
 
+    [SerializeField] bool done = false;
+
     public void Start()
     {
         code.SetActive(false);
@@ -53,20 +55,24 @@ public class PaintingManager : MonoBehaviour
     {
         if (socket1 == painting1 && socket2 == painting2 && socket4 == painting4)
         {
-            //what happens once all are placed?
-            //show piece of code under clock
-            code.SetActive(true);
-            //play audio queue for completion
-            code.GetComponent<AudioSource>().Play();
-            //disable grab on paintings
-            vSocket1.SetActive(false);
-            painting1.SetActive(false);
-            vSocket2.SetActive(false);
-            painting2.SetActive(false);
-            vSocket3.SetActive(false);
-            painting3.SetActive(false);
-            vSocket4.SetActive(false);
-            painting4.SetActive(false);
+            if (!done)
+            {
+                //what happens once all are placed?
+                //show piece of code under clock
+                code.SetActive(true);
+                //play audio queue for completion
+                code.GetComponent<AudioSource>().Play();
+                //disable grab on paintings
+                vSocket1.SetActive(false);
+                painting1.SetActive(false);
+                vSocket2.SetActive(false);
+                painting2.SetActive(false);
+                vSocket3.SetActive(false);
+                painting3.SetActive(false);
+                vSocket4.SetActive(false);
+                painting4.SetActive(false);
+                done = true;
+            }
         }
     }
 }

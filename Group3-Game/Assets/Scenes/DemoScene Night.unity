@@ -977,6 +977,7 @@ MonoBehaviour:
   vSocket2: {fileID: 2107938150}
   vSocket3: {fileID: 528524278}
   vSocket4: {fileID: 1047748974}
+  done: 0
 --- !u!1 &178874447
 GameObject:
   m_ObjectHideFlags: 0
@@ -2465,7 +2466,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0.5
+      value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -9060,7 +9061,7 @@ MonoBehaviour:
   buttonSound: {fileID: 1248903197911649806}
   book: {fileID: 1301284459}
   progress: {fileID: 1827025915}
-  awakening: {fileID: 0}
+  awakening: {fileID: 1436540259}
   floaty: 1
   isOpen: 0
 --- !u!1001 &1081170348
@@ -9647,7 +9648,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 1
+      value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -11920,7 +11921,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0.5
+      value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -13527,7 +13528,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1685861858}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1

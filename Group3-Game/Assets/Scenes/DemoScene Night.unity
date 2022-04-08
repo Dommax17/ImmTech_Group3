@@ -9055,6 +9055,7 @@ MonoBehaviour:
   buttonSound: {fileID: 1248903197911649806}
   book: {fileID: 1301284459}
   progress: {fileID: 1827025915}
+  lightEmit: {fileID: 1315766395}
   floaty: 1
   isOpen: 0
 --- !u!1001 &1081170348

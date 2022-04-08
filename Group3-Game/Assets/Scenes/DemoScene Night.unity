@@ -1315,6 +1315,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 4681016835361923640, guid: 692e035739fb55f498827d6db65ef817,
+        type: 3}
+      propertyPath: m_text
+      value: "4\u033F\u0312\u0311"
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 692e035739fb55f498827d6db65ef817, type: 3}
 --- !u!1 &204797313 stripped
@@ -11877,7 +11882,7 @@ AudioSource:
     type: 2}
   m_audioClip: {fileID: 8300000, guid: 5c84ac9b46c425c4380eeab8bf06525a, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.2
+  m_Volume: 0.4
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -13086,6 +13091,29 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1620052651}
   m_CullTransparentMesh: 1
+--- !u!1 &1622947820 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 1f96366314f3caf4999f5a769b80ee07,
+    type: 3}
+  m_PrefabInstance: {fileID: 177155642}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1622947821
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1622947820}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 335719a5e73673741bd16582af1c4cf0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  degreesPerSecond: 15
+  amplitude: 0.3
+  frequency: 0.3
+  posOffset: {x: 0, y: 0, z: 0}
+  tempPos: {x: 0, y: 0, z: 0}
 --- !u!1 &1631345519
 GameObject:
   m_ObjectHideFlags: 0
@@ -13583,7 +13611,7 @@ AudioSource:
     type: 2}
   m_audioClip: {fileID: 8300000, guid: 5902f2f4f15c137489df7c987234db65, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.5
+  m_Volume: 1
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -15002,6 +15030,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Layer
       value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4681016835361923640, guid: 692e035739fb55f498827d6db65ef817,
+        type: 3}
+      propertyPath: m_text
+      value: "2\u036E\u033D\u0367"
       objectReference: {fileID: 0}
     - target: {fileID: 6040424255167319509, guid: 692e035739fb55f498827d6db65ef817,
         type: 3}
@@ -17195,7 +17228,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 8143076995811136999, guid: 9135f32b0530e4a4ca04c66198c3cce7,
     type: 2}
-  m_audioClip: {fileID: 8300000, guid: 4f90996c8eb13524a965bfdbfde9791e, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 7c1cffe3ed22e594ba385b8401fe50f4, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.5
   m_Pitch: 1

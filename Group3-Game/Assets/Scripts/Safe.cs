@@ -20,7 +20,7 @@ public class Safe : MonoBehaviour
     [SerializeField] AudioSource buttonSound;
     [SerializeField] GameObject book;
     [SerializeField] Progression progress;
-    [SerializeField] GameObject lightEmit;
+    [SerializeField] Awakening awakening;
     public bool floaty = true;
     public bool isOpen;
 
@@ -56,7 +56,7 @@ public class Safe : MonoBehaviour
             //disable buttons
             DisableButtons();
             //spawn book then open safe & play sound
-            lightEmit.SetActive(false);
+            awakening.Awaken();
             book.GetComponent<XRGrabInteractable>().enabled = true;
             openSound.Play();
             anim.SetBool("isOpen", true);

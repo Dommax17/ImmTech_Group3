@@ -53,9 +53,12 @@ public class PaintingManager : MonoBehaviour
             //play audio queue for completion
             code.GetComponent<AudioSource>().Play();
             //disable grab on paintings
-            painting1.GetComponent<XRGrabInteractable>().enabled = false;
-            painting2.GetComponent<XRGrabInteractable>().enabled = false;
-            painting4.GetComponent<XRGrabInteractable>().enabled = false;
+            socket1.SetActive(false);
+            painting1.SetActive(false);
+            socket2.SetActive(false);
+            painting2.SetActive(false);
+            socket4.SetActive(false);
+            painting4.SetActive(false);
         }
     }
 }
